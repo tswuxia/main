@@ -27,7 +27,7 @@ EzWatchList is for those who *prefer to use a desktop app for managing movies an
 .  Copy the file to the folder you want to use as the home folder for your watchlist.
 .  Double-click the file to start the app. The GUI should appear in a few seconds.
 +
-image::Ui.png[width="790"]
+image::RealUI.png[width="790"]
 +
 .  Type the command in the command box and press kbd:[Enter] to execute it. +
 e.g. typing *`help`* and pressing kbd:[Enter] will open the help window.
@@ -58,7 +58,7 @@ The watchlist is the default page that is opened upon start-up of ezwatchlist. I
 * Progress bar showing number of episodes watched (For TV series)
 * Checkbox to indicate if the show has been watched
 
-image::watchlist_page.png[width="790"]
+image::RealUI.png[width="790"]
 
 
 ==== Watched List
@@ -144,23 +144,23 @@ Clears all existing tags of the 2nd show in the list.
 
 ==== Search for a show by name: `search`
 
-Finds shows whose names contain any of the given keywords. +
-Format: `search KEYWORD [MORE_KEYWORDS]`
+Finds shows whose names contain any of the given keywords from the watchlist, watched list and online. +
+Format: `search n/KEYWORD [MORE_KEYWORDS]`
 
 ****
 * The search is case insensitive. e.g `hans` will match `Hans`
 * The order of the keywords does not matter. e.g. `Hans Bo` will match `Bo Hans`
 * Only the name is searched.
 * Only full words will be matched e.g. `Han` will not match `Hans`
-* Persons matching at least one keyword will be returned (i.e. `OR` search). e.g. `Hans Bo` will return `Hans Gruber`, `Bo Yang`
+* Shows matching at least one keyword will be returned (i.e. `OR` search). e.g. `Hans Bo` will return `Hans Gruber`, `Bo Yang`
 ****
 
 Examples:
 
-* `search Angry` +
+* `search n/Angry` +
 Returns `The Angry Birds Movie 2`
-* `search John Angry` +
-Returns any person having names `John` or `Angry`
+* `search n/John Angry` +
+Returns any actor having names `John` or `Angry`
 
 // tag::delete[]
 ==== Deleting a show : `delete`
